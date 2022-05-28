@@ -27,6 +27,15 @@
     <ClCompile Include="Source file\Radix_Sort.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Source file\Stack_List.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Source file\Quick_Sort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Source file\Bubble_Sort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header File\List.h">
@@ -36,6 +45,15 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Header File\Radix_Sort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Header File\Stack_List.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Header File\Quick_Sort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Header File\Bubble_Sort.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
