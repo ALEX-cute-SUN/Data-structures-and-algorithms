@@ -104,6 +104,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>E:\Data structures and algorithms\Data structures and algorithms\Header File;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -128,6 +129,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Data structures and algorithms.cpp" />
+    <ClCompile Include="Source file\Bucket_Sort_List.cpp" />
+    <ClCompile Include="Source file\List.cpp" />
+    <ClCompile Include="Source file\Radix_Sort.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Header File\Bucket_Sort_List.h" />
+    <ClInclude Include="Header File\List.h" />
+    <ClInclude Include="Header File\Radix_Sort.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

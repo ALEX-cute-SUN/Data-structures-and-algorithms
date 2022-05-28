@@ -2,10 +2,45 @@
 //
 
 #include <iostream>
+#include "List.h"
+#include"Bucket_Sort_List.h"
+#include"Radix_Sort.h"
 
+#define TYPE 2
 int main()
 {
-    std::cout << "Hello World!\n";
+#if (TYPE == 0)
+    List L = CreateList();
+    bool flag = Insert(100, L, L);
+    if (!flag)
+        printf("insert error\n");
+    flag = Insert(199, L, L);
+    if (!flag)
+        printf("insert error\n");
+    flag = Insert(1999, L, L);
+    if (!flag)
+        printf("insert error\n");
+    Position P = Find(199, L);
+    flag = Insert(1000, P, L);
+    if (!flag)
+        printf("insert error\n");
+    DeleteList(L);
+#endif
+//bucket_sort test
+#if (TYPE == 1)
+    int a[] = {10,32,23,13,14,15,18,21,19,12};
+    int* p = a;
+    bucket_sort(p, 10, 10, 32);
+#endif
+//
+#if (TYPE == 2)
+    int a[] = { 1000,32,232,136,141,159,181,212,19,12,564,752,3123,7646,321,1,23,23};
+    int* p = a;
+    p = Radix_Sort(p, 18);
+    for (int i = 0; i < 18; ++i) {
+        printf("%d\n", p[i]);
+    }
+#endif
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
