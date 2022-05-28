@@ -2,10 +2,35 @@
 //
 
 #include <iostream>
+#include "List.h"
+#include"Bucket_Sort_List.h"
 
+#define TYPE 1
 int main()
 {
-    std::cout << "Hello World!\n";
+#if (TYPE == 0)
+    List L = CreateList();
+    bool flag = Insert(100, L, L);
+    if (!flag)
+        printf("insert error\n");
+    flag = Insert(199, L, L);
+    if (!flag)
+        printf("insert error\n");
+    flag = Insert(1999, L, L);
+    if (!flag)
+        printf("insert error\n");
+    Position P = Find(199, L);
+    flag = Insert(1000, P, L);
+    if (!flag)
+        printf("insert error\n");
+    DeleteList(L);
+#endif
+
+#if (TYPE == 1)
+    int a[] = {10,32,23,13,14,15,18,21,19,12};
+    int* p = a;
+    bucket_sort(p, 10, 10, 32);
+#endif
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单

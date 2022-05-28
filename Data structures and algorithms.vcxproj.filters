@@ -18,5 +18,19 @@
     <ClCompile Include="Data structures and algorithms.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Source file\List.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Source file\Bucket_Sort_List.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Header File\List.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Header File\Bucket_Sort_List.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
